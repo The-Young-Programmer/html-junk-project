@@ -1,0 +1,109 @@
+/* Created by  NemoNet aka The Young Programmer */
+
+body{
+background: linear-gradient(-45deg,green, #E0EEE0,#E0EEE0,green);
+background-attachment:fixed;
+min-height:100vh;
+overflow: hidden;
+}
+.loading{
+position:fixed;
+background:rgb(0,0,0,0);
+border-bottom:7px solid rgb(0,0,0,0);
+border-left:7px solid #00ffff;
+border-top:7px solid rgb(0,0,0,0);
+border-right:7px solid #00ffff;
+border-radius:50%;
+height:70px;
+width:70px;
+margin-top:calc(35vh - 12.5vmin);
+margin-left:calc(50vw - 12.5vmin);
+animation: pop 4s linear both;
+}
+@keyframes pop{
+0%{transform:rotate(0deg)}
+20%{transform:rotate(360deg)}
+40%{transform:rotate(-360deg)}
+60%{transform:rotate(360deg)}
+95%{opacity:1;transform:rotate(-360deg)}
+100%{opacity:0; transform:rotate(360deg)}
+}
+.section{
+animation:sec 1s 4s both;
+}
+@keyframes sec{
+0%{opacity:0;}
+100%{opacity:1;}
+}
+.rect{
+position: absolute;
+background: linear-gradient(-45deg,green, #E0EEE0,#E0EEE0,green);
+border-radius: 1px 50% 5px 5px;
+height:340px;
+width:220px;
+opacity:0;
+margin-top: 8%;
+margin-left: 16%;
+animation: xyz 2s 3s 1 both;
+}
+@keyframes xyz{
+0%{bottom:0; opacity:0;}
+100%{bottom:20vh; opacity:1;}
+}
+.follow{
+position: relative;
+margin-top: 0;
+margin-left: 19%;
+opacity:0;
+animation: jearry 2s 6s 1 both;
+}
+@keyframes jearry{
+0%{left:0; opacity:0;transform:rotateY(0deg)}
+100%{left:50hh; opacity:1;transform:rotateY(360deg)}
+}
+.imgm{
+border-radius: 50%;
+border: 6px solid green;
+filter:drop-shadow(2px 2px 2px rgb(0,0,0,0.3));
+height:80px;
+weight:80px;
+animation: img-border 1s 12s infinite normal;
+}
+@keyframes img-border{
+0%{border-left: 6px solid #FF69B4;}
+20%{border-right: 6px solid #87CEFA;}
+40%{border-left: 6px solid #20B2AA;}
+60%{border-right: 6px solid #32CD32;}
+80%{border-left: 6px solid #FFA500;}
+100%{border-right: 6px solid #FF4500;}
+}
+.marq{
+font-size:20px;
+color:#141414;
+font-family: cursive;
+animation: sec 16s 10s both;
+}
+.math{
+color: green;
+animation: sec 1s 10s both;
+}
+.code{
+color: green;
+margin-left: 20px;
+animation: sec 1s 10s both;
+}
+p{
+color:rgb(0,0,0,0.3);
+animation:sec 1s 9s both;
+}
+.snow {
+position:fixed;
+left:0;
+top:0;
+bottom:0;
+animation: sec 1s 11.5s both;
+}
+.snow img{
+height:200%;
+width:200%;
+}
