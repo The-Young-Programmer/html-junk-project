@@ -1,0 +1,102 @@
+/* Created by The Young  Programmer🎖*/
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing:border-box ;
+}
+.con{
+    position:absolute ;
+    top:55%;
+    left:52.5%;
+    transform:translate(-50%,-50%);
+}
+.danda{
+    height:400px;
+    width:12px;
+    position:relative ;
+    left:-60px;
+    background-color:brown;
+}
+.dandatop{
+    content:'';
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    position:absolute ;
+    top:-15px;
+    left:-4px;
+    background-color:#448aff;
+}
+.b1 , .b2{
+     background-color:gray;
+     height:40px;
+     width:90px;
+     position:absolute ;
+     left:-100px;
+}
+.b1{
+    border:2px solid #212121;
+}
+.b2{
+    margin-top:42px;
+    width:140px;
+    left:-125px;
+    border:2px solid #212121;
+}
+ul{
+    display:flex;
+    position:absolute ;
+}
+ul li{
+    height:135px;
+    width:5px;
+    background-color:#fff;
+    list-style-type:none;
+    position:relative ;
+    top:-400px;
+    left:-88px;
+    animation:animate 2s linear infinite;   
+}
+li:before{
+    content:'';
+    position:absolute ;
+    height:45px;
+    width:100%;
+    top:0;
+    left:0;
+    background-color:orange;
+}
+li:after{
+    content:'';
+    position:absolute ;
+    height:45px;
+    width:100%;
+    bottom:0;
+    left:0;
+    background-color:green;
+}
+.flagcircle{
+    position:relative ;
+    transform:scale(.5);
+    top:-368px; /*Without animation normal position is -367.5px */
+    left:20px;
+    animation:flag 2s linear infinite;
+    animation-delay:2.5s;
+}
+@keyframes animate{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(5px);
+    }
+}
+@keyframes flag{
+    0%,100%{
+        transform:translateY(0px) scale(.5);
+    }
+    50%{
+        transform:translateY(5px) scale(.5);
+    }
+}
